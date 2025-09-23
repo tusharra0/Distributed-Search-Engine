@@ -4,13 +4,13 @@ A production-ready distributed search engine built with Spring Boot, featuring s
 
 ## Features
 
-- 🚀 **REST API**: Simple endpoints for indexing and searching documents
-- 🔄 **Distributed Architecture**: Sharded data across multiple nodes using consistent hashing
-- ⚡ **Concurrent Search**: Parallel query processing across shards with ExecutorService
-- 💾 **Persistence**: File-based serialization for data durability
-- 📊 **TF-IDF Scoring**: Relevance-based search result ranking
-- 🧪 **Comprehensive Testing**: Unit tests and integration tests included
-- 📈 **Load Testing**: JMeter configuration for performance validation
+- **REST API**: Simple endpoints for indexing and searching documents
+- **Distributed Architecture**: Sharded data across multiple nodes using consistent hashing
+- **Concurrent Search**: Parallel query processing across shards with ExecutorService
+- **Persistence**: File based serialization for data durability
+- **TF-IDF Scoring**: Relevance based search result ranking
+- **Comprehensive Testing**: Unit tests and integration tests included
+- **Load Testing**: JMeter configuration for performance validation
 
 ## Quick Start
 
