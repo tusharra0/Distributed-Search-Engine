@@ -1,9 +1,11 @@
 package com.searchengine.core;
 
+import java.io.Serializable;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class InvertedIndex {
+public class InvertedIndex implements Serializable {
+    private static final long serialVersionUID = 1L;
     // term -> (docId -> frequency)
     private final Map<String, Map<Integer, Integer>> index = new ConcurrentHashMap<>();
     private final Map<Integer, Document> documents = new ConcurrentHashMap<>();

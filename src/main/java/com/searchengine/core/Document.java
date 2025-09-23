@@ -1,6 +1,9 @@
 package com.searchengine.core;
 
-public class Document {
+import java.io.Serializable;
+
+public class Document implements Serializable {
+    private static final long serialVersionUID = 1L;
     private final int id;
     private final String content;
 

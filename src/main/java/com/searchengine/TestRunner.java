@@ -26,5 +26,9 @@ public class TestRunner {
                             " | Content=\"" + entry.getKey().getContent() + "\""
             );
         }
+
+        // Cleanup
+        manager.shutdown();
+        System.out.println("\nTest completed successfully!");
     }
 }

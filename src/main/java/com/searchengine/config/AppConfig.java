@@ -1,6 +1,7 @@
 package com.searchengine.config;
 
 import com.searchengine.distributed.NodeManager;
+import com.searchengine.persistence.PersistenceService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,7 +9,12 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     @Bean
-    public NodeManager nodeManager() {
-        return new NodeManager(); // create and register NodeManager as a Spring Bean
+    public PersistenceService persistenceService() {
+        return new PersistenceService();
+    }
+
+    @Bean
+    public NodeManager nodeManager(PersistenceService persistenceService) {
+        return new NodeManager(persistenceService);
     }
 }
